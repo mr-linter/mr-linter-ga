@@ -2,6 +2,10 @@ name: 'merge-request-linter'
 
 description: 'Lint your merge/pull requests'
 
+branding:
+  icon: 'check'
+  color: 'black'
+
 author: 'artarts36'
 
 inputs:
