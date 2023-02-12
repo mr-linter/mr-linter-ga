@@ -17,10 +17,12 @@ inputs:
   debug:
     description: "Run MR-Linter with debug mode"
     required: false
+    default: false
 
   metrics:
     description: "Print full metrics"
     required: false
+    default: false
 
 runs:
   using: docker
