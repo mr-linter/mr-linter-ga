@@ -1,0 +1,25 @@
+name: 'merge-request-linter'
+
+description: 'Lint your merge/pull requests'
+
+author: 'artarts36'
+
+inputs:
+
+  config:
+    description: "Path to configuration file"
+    required: false
+
+  debug:
+    description: "Run MR-Linter with debug mode"
+    required: false
+
+  metrics:
+    description: "Print full metrics"
+    required: false
+
+runs:
+  using: docker
+  image: docker://artarts36/merge-request-linter
+  args:
+    - lint
