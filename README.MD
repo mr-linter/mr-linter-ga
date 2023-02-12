@@ -18,4 +18,10 @@ Add this lines to your workflow.yml
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
+|  INPUT  |  TYPE  | REQUIRED |  DEFAULT  |          DESCRIPTION          |
+|---------|--------|----------|-----------|-------------------------------|
+| config  | string |  false   |           |  Path to configuration file   |
+|  debug  | string |  false   | `"false"` | Run MR-Linter with debug mode |
+| metrics | string |  false   | `"false"` |      Print full metrics       |
+
 <!-- AUTO-DOC-INPUT:END -->
