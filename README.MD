@@ -5,6 +5,9 @@ Github Action for validating your pull requests.
 Main repository: https://github.com/ArtARTs36/php-merge-request-linter
 
 ## Usage
+
+Implementation example: https://github.com/ArtARTs36/ShellCommand/pull/11
+
 1. Add config file with name `.mr-linter.yml` or `.mr-linter.json`. Examples:
 * https://github.com/ArtARTs36/php-merge-request-linter/blob/master/stubs/.mr-linter.yaml
 * https://github.com/ArtARTs36/php-merge-request-linter/blob/master/stubs/.mr-linter.json
