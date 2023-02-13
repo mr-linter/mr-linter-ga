@@ -29,4 +29,5 @@ runs:
   image: docker://artarts36/merge-request-linter
   args:
     - lint
-    - "${{ inputs.debug ? '--debug' : '' }}"
+    - ${{ inputs.debug && '--debug' || '' }}
+    - ${{ inputs.metrics && '--metrics' || '' }}
