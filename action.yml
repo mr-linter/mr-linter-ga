@@ -26,6 +26,4 @@ inputs:
 
 runs:
   using: docker
-  image: docker://artarts36/merge-request-linter
-  args:
-    - "lint ${{ inputs.debug == true && '--debug' || '' }} ${{ inputs.metrics == true && '--metrics' || '' }}"
+  image: 'Dockerfile'

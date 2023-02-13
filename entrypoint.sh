@@ -16,5 +16,5 @@ if [ ! -z "$INPUT_CONFIG" ]; then
     MR_LINTER_CONFIG="--config=$INPUT_CONFIG"
 fi
 
-/app/bin/mr-linter --version
-/app/bin/mr-linter lint $MR_LINTER_DEBUG $MR_LINTER_METRICS "$MR_LINTER_CONFIG"
+mr-linter --version
+mr-linter lint $MR_LINTER_DEBUG $MR_LINTER_METRICS $MR_LINTER_CONFIG
