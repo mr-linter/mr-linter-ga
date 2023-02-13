@@ -11,7 +11,7 @@ Add this lines to your workflow.yml
     steps:
       - uses: actions/checkout@v2
       - name: Lint Pull Request
-        uses: mr-linter/mr-linter-ga@v0.1.0
+        uses: mr-linter/mr-linter-ga@v0.2.0
 ```
 
 ## Inputs
