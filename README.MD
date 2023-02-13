@@ -2,16 +2,34 @@
 
 Github Action for validating your pull requests.
 
-## Usage
+Main repository: https://github.com/ArtARTs36/php-merge-request-linter
 
-Add this lines to your workflow.yml
+## Usage
+1. Add config file with name `.mr-linter.yml` or `.mr-linter.json`. Examples:
+* https://github.com/ArtARTs36/php-merge-request-linter/blob/master/stubs/.mr-linter.yaml
+* https://github.com/ArtARTs36/php-merge-request-linter/blob/master/stubs/.mr-linter.json
+
+2. Add new workflow file .github/workflows/review.yml with content
 
 ```yaml
-...
+name: PR Review
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
+
       - name: Lint Pull Request
         uses: mr-linter/mr-linter-ga@v0.2.0
+        env:
+          MR_LINTER_GITHUB_TOKEN: ${{ secrets.MR_LINTER_GITHUB_TOKEN }}
 ```
 
 ## Inputs
