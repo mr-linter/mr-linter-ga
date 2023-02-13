@@ -29,4 +29,4 @@ runs:
   image: docker://artarts36/merge-request-linter
   args:
     - lint
-  entrypoint: entrypoint.sh
+  entrypoint: '/entrypoint.sh'
