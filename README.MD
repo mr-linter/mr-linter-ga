@@ -32,7 +32,7 @@ jobs:
       - name: Lint Pull Request
         uses: mr-linter/mr-linter-ga@v0.2.0
         env:
-          MR_LINTER_GITHUB_HTTP_TOKEN: ${{ secrets.MR_LINTER_GITHUB_HTTP_TOKEN }}
+          MR_LINTER_HTTP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ## Inputs
