@@ -20,6 +20,11 @@ name: PR Review
 on:
   pull_request:
     branches: [ master ]
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
 
 jobs:
   build:
